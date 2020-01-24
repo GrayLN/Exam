@@ -16,11 +16,24 @@ app.get("/", function(request, response) {
   response.sendFile(__dirname + "/views/index.html");
 });
 
-app.get("/", function(request, response) {
-  response.sendFile(__dirname + "/views/code.html");
-});
-
 // listen for requests :)
 const listener = app.listen(process.env.PORT, function() {
   console.log("Your app is listening on port " + listener.address().port);
 });
+
+app.get("/index.html", function(request, response) {
+  response.sendFile(__dirname + "/views/index.html");
+});
+
+app.get("/brick.html", function(request, response) {
+  response.sendFile(__dirname + "/views/brick.html");
+});
+
+app.get("/log-in.html", function(request, response) {
+  response.sendFile(__dirname + "/views/log-in.html");
+});
+
+app.get("/sign-up.html", function(request, response) {
+  response.sendFile(__dirname + "/views/sign-up.html");
+});
+

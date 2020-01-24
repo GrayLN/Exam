@@ -7,9 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="home.css">
-    
-    <title>Gamer's Den</title>
+
+    <title>Jamesons Biography </title>
   </head>
   <body>
     
@@ -38,7 +37,8 @@
             <a class="nav-link" href="brick.html"
               >Play</a
             >
-             <li class="nav-item">
+          </li>
+               <li class="nav-item">
             <a class="nav-link" href="log-in.html"
               >Log-in</a
             >
@@ -47,28 +47,61 @@
             <a class="nav-link" href="https://jva.schools.smcdsb.on.ca/"
               >My School</a
             >
-          </li>
+         
           </li>
         </ul>
       </div>
     </nav>
     <container> </container>
-    <body
+  </body>
+  <body
     id="background1"
     background="https://cdn.glitch.com/bceef7e5-13ac-4a75-9a2c-cc6d73d3a484%2Fbackground-gaming_192440.jpg?v=1579878591755"
   ></body>
-   <div style="background-color:white;color:grey;padding:20px;">
-      <h1 style="text-align:center;">
-      Welcome to the Gamer's Den!
-      </h1>
+  <div style="background-color:white;color:grey;padding:20px;">
+<h1>
+  Sign-up here today! </h1>
+  <form action="/sign-in-url" method="post">
+    <label>First Name: <input type="text"> </label>
+      <label>Last Name: <input type="text"> </label>
+    </div> 
+    <div style="background-color:white;color:grey;padding:20px;">
+      <label for="radio-choice-1">Male</label>
+      <input type="radio" id="radio-choice-1" value="choice-1" />
+       <label for="radio-choice-2">Female</label>
+      <input type="radio" id="radio-choice-2" value="choice-2" />
+        <label for="radio-choice-3">Other</label>
+      <input type="radio" id="radio-choice-3" value="choice-3" />
+    </div>
+    
+    <div style="background-color:white;color:grey;padding:20px;">
+<label for="email">Email:</label>
+<input id="email" type="email" required>
+      <label for="username">Username:</label>
+<input id="username" maxlength="20" minlength="4" type="username" required>
+<label for="password">Password:</label>
+  <input name="password" id="password" maxlength="10" minlength="5" type="password" required>
+    </div>
+    
+    <div style="background-color:white;color:grey;padding:20px;">
+<label> Date of birth: <input type="date"= required</label>
+
+</div>
+    
+    <div style="background-color:white;color:grey;padding:20px;">
+      <label>Do you agree with the terms and services: <input type="checkbox" = required > </label>
       </div>
-   <div style="background-color:white;color:grey;padding:20px;">
-         <img align= "middle" src="https://cdn.glitch.com/bceef7e5-13ac-4a75-9a2c-cc6d73d3a484%2Fdd26118ec5c010f874fd57f5325fb2a19cc44f1fr1-2048-1381v2_hq.jpg?v=1579880289370" 
-              alt="Jameson Narain" class="jameson">
-     <p id="instructions">
-  In order to play our brick breaker game, you'll need either a <strong>Mobile device, keyboard, or mouse,</strong>. If playing on keyboard, you may use your left and right arrow keys to move the paddle. If playing with a mouse, just simply move your mouse around. On mobile, press where you want to go. To simply play, click on the play tab above!
-     </p>
-  </div>
-  
-  </body>
-    </html>
+        
+      <div style="background-color:white;color:grey;padding:20px;">
+       <label>Would you like to recieve promotional emails: <input type="checkbox"> </label>
+    </div>
+    <div style="background-color:white;color:grey;padding:20px;">
+    <button>Submit</button>
+      </div>
+  </form>
+   
+      <div style="background-color:grey;color:white;padding:20px;">
+    <p>Already have an account? <a href="log-in.html">Log-in here!</a><br /></p>
+      </div>
+      </div>
+</html>
